@@ -13,9 +13,9 @@ footer {
 .flex-container {
     display: flex;
     flex-direction: row;
-    height: 150px;
+    height: 170px;
     width: 100%;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     border: 1px solid black;
 }
@@ -25,17 +25,34 @@ footer {
     border: 1px solid black;
     flex: 1;
     display: flex;
-    align-items: center;
-    min-height: 170x;
+
+    align-items: stretch;
+    min-height: 170px;
+    max-width: 170px;
 }
+
+#text3 {}
 
 .flex-container2 {
     display: flex;
-    flex-direction: row;
-    height: 150px;
+    flex-direction: row-reverse;
+    height: 170px;
     width: 100%;
+    float: left;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid black;
+}
+
+.flex-container3 {
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    /* justify-content: space-between; */
     border: 1px solid black;
 }
 
@@ -44,7 +61,8 @@ footer {
     flex: 1;
     display: flex;
     align-items: center;
-    min-height: 170x;
+
+    /* min-height: 170px; */
 }
 
 .navbar {
@@ -90,7 +108,25 @@ header {
     margin-bottom: 50px;
 }
 
-/* 
-#x {
-    margin-left: 140px;
-} */
+.left1 {
+    flex: 1;
+    border: 1px solid black;
+}
+
+.right1 {
+    flex: 1;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+    height: 80vh;
+}
+
+.rightSideStuff {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: 70vh;
+}
